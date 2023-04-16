@@ -6,7 +6,7 @@ const lightTheme = {
   color: 'black',
   'background-color': colors['--gray-0'],
 
-  // Variables
+  '--anchor-color': colors['--blue-8'],
 
   // Code color
   '--code-background-color': colors['--gray-8'],
@@ -26,6 +26,10 @@ const lightTheme = {
   '--box-border-right-color': colors['--gray-4'],
   '--box-border-bottom-color': colors['--gray-4'],
   '--box-border-left-color': colors['--gray-4'],
+
+  '--font-color-blue': colors['--blue-9'],
+  '--font-color-red': colors['--red-9'],
+  '--font-color-green': colors['--green-9']
 
 };
 

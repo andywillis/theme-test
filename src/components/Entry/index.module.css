@@ -1,0 +1,11 @@
+.entry {
+  margin: var(--container-margin) 0;
+}
+
+.entry p {
+  margin-top: calc(var(--box-margin-top) * 4);
+}
+
+.entry p a {
+  color: var(--anchor-color);
+}

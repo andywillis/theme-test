@@ -1,0 +1,5 @@
+.footer {
+  margin: var(--container-margin);
+  display: flex;
+  align-items: center;
+}
