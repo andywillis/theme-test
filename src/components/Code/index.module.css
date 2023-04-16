@@ -1,12 +1,23 @@
 .container {
+  display: flex;
+  width: 100%;
+  min-height: fit-content;
+  max-height: 300px;
   border-radius: var(--box-border-radius);
-  width: max-content;
   padding: var(--container-padding);
   margin-top: var(--container-margin-top);
   background-color: var(--code-background-color);
+  overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 .code {
   font-size: 1rem;
   color: var(--code-color);
+}
+
+@media only screen and ( min-width: 1024px ) { 
+  .container {
+    width: 50%;
+  }
 }

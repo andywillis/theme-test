@@ -1,4 +1,4 @@
-const typography = {
+export default {
 
   // Headings
   '--font-size-h1': '48px + (60 - 48) * ((100vw - 300px) / (1600 - 300))',
@@ -7,5 +7,3 @@ const typography = {
   '--font-size-h4': '24px + (36 - 24) * ((100vw - 300px) / (1600 - 300))'
 
 };
-
-export default typography;

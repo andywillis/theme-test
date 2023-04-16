@@ -1,4 +1,4 @@
-const layout = {
+export default {
 
   // Variables
 
@@ -45,5 +45,3 @@ const layout = {
   '--box-margin-left': '0.5rem'
 
 };
-
-export default layout;
