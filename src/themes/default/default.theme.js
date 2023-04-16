@@ -1,7 +1,11 @@
-import layoutTheme from './layout.theme';
+import layout from './layout';
+import typography from './typography';
+import color from './color';
 
 const defaultTheme = {
-  ...layoutTheme
+  ...color,
+  ...layout,
+  ...typography
 };
 
 export default defaultTheme;

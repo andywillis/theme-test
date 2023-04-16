@@ -9,7 +9,8 @@ const lightTheme = {
   // Variables
 
   // Code color
-  '--code-color': 'blue',
+  '--code-background-color': colors['--gray-8'],
+  '--code-color': colors['--orange-1'],
 
   // Box colors
   '--box-background-color': colors['--gray-0'],

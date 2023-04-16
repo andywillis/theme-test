@@ -1,6 +1,20 @@
-const defaultTheme = {
+const layout = {
 
   // Variables
+
+  // Container padding
+  '--container-padding': '1rem',
+  '--container-padding-top': '1rem',
+  '--container-padding-right': '1rem',
+  '--container-padding-bottom': '1rem',
+  '--container-padding-left': '1rem',
+
+  // Container margin
+  '--container-margin': '1rem',
+  '--container-margin-top': '1rem',
+  '--container-margin-right': '1rem',
+  '--container-margin-bottom': '1rem',
+  '--container-margin-left': '1rem',
 
   // Box padding
   '--box-padding': '0.25rem',
@@ -32,4 +46,4 @@ const defaultTheme = {
 
 };
 
-export default defaultTheme;
+export default layout;

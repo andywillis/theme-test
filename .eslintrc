@@ -7,13 +7,7 @@
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    "requireConfigFile": false,
-    "babelOptions": {
-      "plugins": [
-        "@babel/plugin-syntax-import-assertions"
-      ]
-    },
-    "presets": ["@babel/preset-react"]
+    "requireConfigFile": true
   },
   "globals": {
     "React": true

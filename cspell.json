@@ -19,6 +19,7 @@
     "Pathcompiled",
     "postbuild",
     "preact",
+    "prismjs",
     "reduxjs",
     "rootname",
     "serverdev",

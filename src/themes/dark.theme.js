@@ -7,7 +7,8 @@ const darkTheme = {
   color: colors['--gray-0'],
 
   // Variables
-  '--code-color': colors['--orange-2'],
+  '--code-background-color': colors['--gray-2'],
+  '--code-color': colors['--gray-10'],
 
   '--box-background-color': colors['--gray-10'],
   '--box-color': colors['--gray-0'],
