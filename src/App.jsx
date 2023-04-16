@@ -1,8 +1,9 @@
 import Heading from './components/Heading';
+import Select from './components/Select';
 
 import useTheme from './hooks/useTheme';
 
-import { theme } from './store/main';
+import { theme, themeOptions } from './store/theme';
 
 export default function App() {
   
@@ -14,11 +15,11 @@ export default function App() {
 
   return (
     <main>
-      <select value={theme.value} onChange={handleSelect}>
-        <option disabled selected>Choose theme</option>
-        <option value="blue">Blue</option>
-        <option value="green">Green</option>
-      </select>
+      <Select
+        value={theme.value}
+        options={themeOptions.value}
+        handleSelect={handleSelect}
+      />
       <Heading text="Heading" />
     </main>
   );

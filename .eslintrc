@@ -74,6 +74,7 @@
     "no-tabs": 0,
     "react/jsx-no-bind": 0,
     "react/function-component-definition": 0,
-    "indent": ["error", 2]
+    "indent": ["error", 2],
+    "react/jsx-indent-props": [2, 2]
   }
 }
