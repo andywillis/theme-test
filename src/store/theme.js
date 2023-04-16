@@ -19,7 +19,7 @@ const selectedTheme = signal('light');
 
 const themeSelectOptions = computed(() => {
   return Object.keys(availableThemes).map(key => {
-    return { value: key, text: capitaliseWord(key) };
+    return { value: key, text: `${capitaliseWord(key)} Mode` };
   });
 });
 

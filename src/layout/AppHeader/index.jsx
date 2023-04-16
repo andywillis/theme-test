@@ -19,6 +19,7 @@ function AppHeader() {
       <Heading text="Journal" level="1" />
       <Select
         name="themes"
+        label="Choose color mode"
         value={selectedTheme.value}
         options={themeSelectOptions.value}
         handleSelect={handleSelect}

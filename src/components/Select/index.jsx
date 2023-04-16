@@ -2,7 +2,7 @@ import Option from './Option';
 
 import style from './index.module.css';
 
-function Select({ value, options, name, handleSelect }) {
+function Select({ label, value, options, name, handleSelect }) {
   return (
     <select
       aria-label={name}
@@ -10,7 +10,7 @@ function Select({ value, options, name, handleSelect }) {
       value={value}
       onChange={handleSelect}
     >
-      <option disabled selected>Choose theme</option>
+      <option disabled selected>{label}</option>
       {options.map(option => {
         return <Option key={option.value} {...option} />;
       })}

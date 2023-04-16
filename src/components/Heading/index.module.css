@@ -4,7 +4,6 @@
 
 .h1 {
   font-size: calc(var(--font-size-h1));
-  /* color: var(--font-color-h1); */
 }
 
 .h2 {

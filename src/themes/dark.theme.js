@@ -18,9 +18,9 @@ const darkTheme = {
   '--option-background-color': colors['--gray-10'],
   '--option-color': colors['--gray-0'],
 
-  '--font-color-blue': colors['--blue-5'],
-  '--font-color-red': colors['--red-5'],
-  '--font-color-green': colors['--green-5'],
+  '--font-color-blue': colors['--blue-3'],
+  '--font-color-red': colors['--red-3'],
+  '--font-color-green': colors['--green-3'],
 
 };
 

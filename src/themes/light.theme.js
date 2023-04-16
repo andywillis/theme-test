@@ -3,7 +3,7 @@ import colors from 'open-props/src/props.colors';
 const lightTheme = {
 
   // Fixed
-  color: 'black',
+  color: colors['--gray-11'],
   'background-color': colors['--gray-0'],
 
   '--anchor-color': colors['--blue-8'],
