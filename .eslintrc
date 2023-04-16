@@ -1,7 +1,7 @@
 {
   "extends": [
     "airbnb",
-    "plugin:react/recommended",
+    "plugin:preact/recommended",
     "plugin:jsx-a11y/recommended"
   ],
   "parser": "@babel/eslint-parser",
@@ -11,8 +11,7 @@
     "babelOptions": {
       "plugins": [
         "@babel/plugin-syntax-import-assertions"
-      ],
-      "presets": ["@babel/preset-react"]
+      ]
     }
   },
   "globals": {
@@ -74,6 +73,7 @@
     "no-param-reassign": 0,
     "no-tabs": 0,
     "react/jsx-no-bind": 0,
-    "react/function-component-definition": 0
+    "react/function-component-definition": 0,
+    "indent": ["error", 2]
   }
 }
