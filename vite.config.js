@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import preact from '@preact/preset-vite'
+import { defineConfig } from 'vite';
+import preact from '@preact/preset-vite';
+import postcssNesting from 'postcss-nesting';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [preact()],
   server: {
@@ -14,10 +14,17 @@ export default defineConfig({
       react: 'preact/compat'
     }
   },
+  css: {
+    postcss: {
+      plugins: [
+        postcssNesting
+      ]
+    }
+  },
   build: {
     target: 'esnext',
     emptyOutDir: true,
     outDir: '../build',
     sourcemap: true
   }
-})
+});

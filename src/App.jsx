@@ -4,29 +4,37 @@ import Select from './components/Select';
 
 import useTheme from './hooks/useTheme';
 
-import { theme, themeOptions } from './store/theme';
+import {
+  selectedTheme,
+  themeSelectOptions
+} from './store/theme';
+
+import style from './App.module.css';
 
 const code = JSON.stringify([
   { name: 'Andy', age: 'bob' }
 ], null, 2);
 
-export default function App() {
-  
-  useTheme(theme.value);
-  
+function App() {
+
+  useTheme(selectedTheme.value);
+
   function handleSelect(e) {
-    theme.value = e.target.value;
+    selectedTheme.value = e.target.value;
   }
 
   return (
-    <main>
+    <main class={style.main}>
       <Select
-        value={theme.value}
-        options={themeOptions.value}
+        value={selectedTheme.value}
+        options={themeSelectOptions.value}
         handleSelect={handleSelect}
       />
-      <Heading text="Heading" />
+      <Heading text="Spotmaps" level="1" />
       <Code code={code} />
     </main>
   );
+
 }
+
+export default App;

@@ -6,7 +6,9 @@ function Select({ value, options, handleSelect }) {
   return (
     <select class={style.select} value={value} onChange={handleSelect}>
       <option disabled selected>Choose theme</option>
-      {options.map(option => <Option {...option} />)}
+      {options.map(option => {
+        return <Option key={option.value} {...option} />;
+      })}
     </select>
   );
 }

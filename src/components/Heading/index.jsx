@@ -1,7 +1,18 @@
+import { createElement } from 'preact';
+import classNames from 'classnames';
+
 import style from './index.module.css';
 
-function Heading({ text }) {
-  return <h2 class={style.heading}>{text}</h2>;
+function Heading({ level = 1, text }) {
+
+  const cn = classNames([ style.heading, style[`h${level}`] ]);
+
+  return createElement(
+    `h${level}`,
+    { class: cn },
+    text
+  );
+
 }
 
 export default Heading;
