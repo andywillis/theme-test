@@ -1,9 +1,14 @@
+import Code from './components/Code';
 import Heading from './components/Heading';
 import Select from './components/Select';
 
 import useTheme from './hooks/useTheme';
 
 import { theme, themeOptions } from './store/theme';
+
+const code = JSON.stringify([
+  { name: 'Andy', age: 'bob' }
+], null, 2);
 
 export default function App() {
   
@@ -21,6 +26,7 @@ export default function App() {
         handleSelect={handleSelect}
       />
       <Heading text="Heading" />
+      <Code code={code} />
     </main>
   );
 }

@@ -1,8 +1,7 @@
 import colors from 'open-props/src/props.colors';
 
-const theme = {
+const greenTheme = {
   '--text-color': colors['--green-4']
 };
 
-export default theme;
-
+export default greenTheme;

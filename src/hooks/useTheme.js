@@ -1,9 +1,10 @@
 import { useLayoutEffect } from 'preact/hooks';
 
-import themeLight from '../themes/light.theme.js';
-import themeDark from '../themes/dark.theme.js';
-import themeBlue from '../themes/blue.theme.js';
-import themeGreen from '../themes/green.theme.js';
+import themeDefault from '../themes/default.theme';
+import themeLight from '../themes/light.theme';
+import themeDark from '../themes/dark.theme';
+import themeBlue from '../themes/blue.theme';
+import themeGreen from '../themes/green.theme';
 
 const themes = {
   light: themeLight,
@@ -14,7 +15,7 @@ const themes = {
 
 function useTheme(theme) {
   useLayoutEffect(() => {
-    Object.entries(themes[theme]).forEach(([ key, value ]) => {
+    Object.entries({ ...themeDefault, ...themes[theme] }).forEach(([ key, value ]) => {
       document.documentElement.style.setProperty(key, value);
     });
   }, [theme]);
