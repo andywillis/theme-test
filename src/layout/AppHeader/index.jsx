@@ -20,13 +20,13 @@ function AppHeader() {
       <section class={style.icons}>
         <Icon
           type="light"
-          alt="Light mode"
+          label="Switch to light mode"
           handleClick={handleClick}
           disabled={theme.selectedTheme.value === 'light'}
         />
         <Icon
           type="dark"
-          alt="Dark mode"
+          label="Switch to dark mode"
           handleClick={handleClick}
           disabled={theme.selectedTheme.value === 'dark'}
         />

@@ -2,7 +2,7 @@ import classNames from 'classnames';
 
 import style from './index.module.css';
 
-function Icon({ type, handleClick, disabled }) {
+function Icon({ type, label, handleClick, disabled }) {
 
   const cn = classNames([
     style.icon,
@@ -12,6 +12,7 @@ function Icon({ type, handleClick, disabled }) {
   return (
     <button
       type="button"
+      aria-label={label}
       class={cn}
       data-type={type}
       onClick={handleClick}
