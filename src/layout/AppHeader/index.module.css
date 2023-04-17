@@ -1,15 +1,8 @@
 .header {
-  margin:
-    var(--container-margin-top)
-    var(--container-margin-top)
-    calc(var(--container-margin-top) * 3)
-    var(--container-margin-top);
+  margin: calc(var(--container-margin) / 2);
   display: flex;
   align-items: center;
-  border-bottom:
-    var(--box-border-bottom-width)
-    solid
-    var(--box-border-bottom-color);
+  border-bottom: var(--container-border-width) solid var(--container-border-color);
 }
 
 .header h1 {
