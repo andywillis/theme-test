@@ -1,15 +1,15 @@
 import Heading from '../../components/Heading';
-import Select from '../../components/Select';
+import Icon from '../../components/Icon';
 
 import style from './index.module.css';
 
 import {
-  selectedTheme,
-  themeSelectOptions
-} from '../../store/theme';
+  theme
+} from '../../store';
 
-function handleSelect(e) {
-  selectedTheme.value = e.target.value;
+function handleClick(e) {
+  const { type } = e.target.dataset;
+  theme.selectedTheme.value = type;
 }
 
 function AppHeader() {
@@ -17,13 +17,20 @@ function AppHeader() {
   return (
     <header class={style.header}>
       <Heading text="Journal" level="1" />
-      <Select
-        name="themes"
-        label="Choose color mode"
-        value={selectedTheme.value}
-        options={themeSelectOptions.value}
-        handleSelect={handleSelect}
-      />
+      <section class={style.icons}>
+        <Icon
+          type="light"
+          alt="Light mode"
+          handleClick={handleClick}
+          disabled={theme.selectedTheme.value === 'light'}
+        />
+        <Icon
+          type="dark"
+          alt="Dark mode"
+          handleClick={handleClick}
+          disabled={theme.selectedTheme.value === 'dark'}
+        />
+      </section>
     </header>
   );
 }

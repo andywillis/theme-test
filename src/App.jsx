@@ -7,18 +7,21 @@ import Entry from './components/Entry';
 import useTheme from './hooks/useTheme';
 
 import {
-  selectedTheme,
-} from './store/theme';
+  theme,
+  journal
+} from './store';
 
 function App() {
 
-  useTheme(selectedTheme.value);
+  useTheme(theme.selectedTheme.value);
 
   return (
     <>
       <AppHeader />
       <AppMain>
-        <Entry />
+        {journal.entries.value.map(entry => {
+          return <Entry key={entry.id} data={entry} />;
+        })}
       </AppMain>
       <AppFooter />
     </>

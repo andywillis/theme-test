@@ -1,23 +1,72 @@
-import Code from '../Code';
+/* eslint-disable react/no-danger */
 import Heading from '../Heading';
 
 import style from './index.module.css';
 
-const code = JSON.stringify([
-  { id: 1, name: 'Andy', age: 20 }
-], null, 2);
+function Entry({ data: entry }) {
 
-function Entry() {
+  const { title, date, body } = entry;
+
   return (
     <section class={style.entry}>
+
       <header class={style.header}>
-        <Heading text="Parkes Operation Center (Apollo 11)" level="2" />
-        <Heading text="Tuesday, 26 July 2022" level="4" />
+        <Heading text={title} level="2" />
+        <Heading text={date} level="4" />
       </header>
-      <p>Just finished watching <a href="https://en.wikipedia.org/wiki/The_Dish">&quot;The Dish&quot;</a> - the fictional account of the Parkes Observatory and the team that worked there during the Apollo mission. But because it was based on the actual events the film-makers used fictional characters.</p>
-      <Code code={code} />
+
+      {body.map(el => {
+
+        switch (el.type) {
+
+          case 'image': return (
+            <img
+              key={el.id}
+              class={style.image}
+              src={el.src}
+              alt={el.alt}
+            />
+          );
+
+          case 'heading': return (
+            <p
+              class={style.heading}
+              key={el.id}
+            >{el.text}
+            </p>
+          );
+
+          case 'table': return (
+            <table
+              class={style.table}
+              key={el.id}
+              className={style.table}
+              dangerouslySetInnerHTML={{ __html: el.html }}
+            />
+          );
+
+          case 'blockquote': return (
+            <p
+              class={style.blockquote}
+              key={el.id}
+              dangerouslySetInnerHTML={{ __html: el.html }}
+            />
+          );
+
+          default: return (
+            <p
+              class={style.para}
+              key={el.id}
+              dangerouslySetInnerHTML={{ __html: el.html }}
+            />
+          );
+        }
+
+      })}
+
     </section>
   );
+
 }
 
 export default Entry;

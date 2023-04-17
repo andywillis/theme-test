@@ -1,14 +1,13 @@
 .header {
-  margin: calc(var(--container-margin) / 2);
+  margin-bottom: calc(var(--container-margin) / 2);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  border-bottom: var(--container-border-width) solid var(--container-border-color);
+  justify-content: center;
+  background-color: var(--background-color-layout);
+  border-bottom: var(--container-border-width) solid var(--border-color-layout);
 }
 
-.header h1 {
-  flex: 5;
-}
-
-.header select {
-  flex: 1;
+.icons {
+  margin-bottom: var(--container-margin);
 }
