@@ -3,9 +3,13 @@
 }
 
 .entry p {
-  margin-top: calc(var(--box-margin-top) * 4);
+  margin: calc(var(--box-margin) * 2) 0;
 }
 
 .entry p a {
-  color: var(--anchor-color);
+  color: var(--text-color-anchor);
+}
+
+.header {
+  margin-bottom: calc(var(--text-margin) * 2);
 }

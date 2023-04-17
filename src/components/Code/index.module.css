@@ -4,20 +4,21 @@
   min-height: fit-content;
   max-height: 300px;
   border-radius: var(--box-border-radius);
-  padding: var(--container-padding);
-  margin-top: var(--container-margin-top);
-  background-color: var(--code-background-color);
+  padding: calc(var(--box-padding) / 2) var(--container-padding);
+  margin: calc(var(--container-margin) * 2) 0;
+  background-color: var(--background-color-code);
   overflow-y: scroll;
   overflow-x: scroll;
 }
 
 .code {
-  font-size: 1.1rem;
-  color: var(--code-color);
+  font-size: var(--text-size-code);
+  color: var(--text-color-code);
+  font-family: "Source Code Pro", 'Courier New', monospace;
 }
 
-@media only screen and ( min-width: 1024px ) { 
+/* @media only screen and ( min-width: 1024px ) { 
   .container {
     width: 50%;
   }
-}
+} */

@@ -7,9 +7,9 @@ export default {
   '--font-size-h4': '24px + (36 - 24) * ((100vw - 300px) / (1600 - 300))',
 
   // Margins
-  // '--font-margin-bottom-h1': '0.5em',
-  '--font-margin-bottom-h2': '0.25em',
-  '--font-margin-bottom-h3': '0.25em',
-  '--font-margin-bottom-h4': '0.25em',
+  '--text-margin': '1rem',
+
+  // Code
+  '--text-size-code': '0.8rem'
 
 };

@@ -3,24 +3,22 @@ import colors from 'open-props/src/props.colors';
 const darkTheme = {
 
   // Fixed
-  'background-color': colors['--gray-10'],
   color: colors['--gray-0'],
+  'background-color': colors['--gray-10'],
 
-  // Variables
-  '--code-background-color': colors['--gray-2'],
-  '--code-color': colors['--gray-10'],
+  // Text colors
+  '--text-color-blue': colors['--blue-4'],
+  '--text-color-red': colors['--red-4'],
+  '--text-color-green': colors['--green-4'],
+  '--text-color-darkgray': colors['--gray-4'],
+  '--text-color-code': colors['--orange-4'],
+  '--text-color-anchor': colors['--red-4'],
 
-  '--anchor-color': colors['--orange-4'],
+  // Background colors
+  '--background-color-code': colors['--gray-8'],
 
-  '--box-background-color': colors['--gray-10'],
-  '--box-color': colors['--gray-0'],
-
-  '--option-background-color': colors['--gray-10'],
-  '--option-color': colors['--gray-0'],
-
-  '--font-color-blue': colors['--blue-3'],
-  '--font-color-red': colors['--red-3'],
-  '--font-color-green': colors['--green-3'],
+  // Border colors
+  '--border-color-midgray': colors['--gray-4'],
 
 };
 
