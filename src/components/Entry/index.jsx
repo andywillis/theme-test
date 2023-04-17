@@ -20,15 +20,25 @@ function Entry({ data: entry }) {
         switch (el.type) {
 
           case 'image': return (
-            <img key={el.id} src={el.src} alt={el.alt} />
+            <img
+              key={el.id}
+              class={style.image}
+              src={el.src}
+              alt={el.alt}
+            />
           );
 
           case 'heading': return (
-            <p key={el.id}>{el.text}</p>
+            <p
+              class={style.heading}
+              key={el.id}
+            >{el.text}
+            </p>
           );
 
           case 'table': return (
             <table
+              class={style.table}
               key={el.id}
               className={style.table}
               dangerouslySetInnerHTML={{ __html: el.html }}
@@ -37,12 +47,15 @@ function Entry({ data: entry }) {
 
           case 'blockquote': return (
             <p
+              class={style.blockquote}
               key={el.id}
-              dangerouslySetInnerHTML={{ __html: el.html }} />
+              dangerouslySetInnerHTML={{ __html: el.html }}
+            />
           );
 
           default: return (
             <p
+              class={style.para}
               key={el.id}
               dangerouslySetInnerHTML={{ __html: el.html }}
             />
