@@ -19,10 +19,12 @@ const darkTheme = {
   '--background-color-code': colors['--gray-8'],
   '--background-color-layout': colors['--gray-8'],
   '--background-color-highlight': colors['--blue-2'],
+  '--background-color-tag': colors['--green-10'],
 
   // Border colors
   '--border-color-midgray': colors['--gray-4'],
   '--border-color-layout': colors['--gray-6'],
+  '--border-color-tag': colors['--green-6'],
 
 };
 

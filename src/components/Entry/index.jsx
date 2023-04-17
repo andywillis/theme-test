@@ -1,11 +1,14 @@
 /* eslint-disable react/no-danger */
 import Heading from '../Heading';
+import Tags from '../Tags';
 
 import style from './index.module.css';
 
 function Entry({ data: entry }) {
 
-  const { title, date, body } = entry;
+  const { title, date, body, tags } = entry;
+
+  console.log(entry);
 
   return (
     <section class={style.entry}>
@@ -63,6 +66,8 @@ function Entry({ data: entry }) {
         }
 
       })}
+
+      <Tags tags={tags} />
 
     </section>
   );

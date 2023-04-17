@@ -20,10 +20,12 @@ const lightTheme = {
   '--background-color-code': colors['--gray-3'],
   '--background-color-layout': colors['--gray-1'],
   '--background-color-highlight': colors['--blue-2'],
+  '--background-color-tag': colors['--green-2'],
 
   // Border colors
   '--border-color-midgray': colors['--gray-4'],
   '--border-color-layout': colors['--gray-4'],
+  '--border-color-tag': colors['--green-10'],
 
 };
 
