@@ -15,7 +15,8 @@
     "install": "0.13.0",
     "npm": "9.6.4",
     "open-props": "^1.5.3",
-    "preact": "^10.13.0"
+    "preact": "^10.13.0",
+    "preact-render-to-string": "6.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
