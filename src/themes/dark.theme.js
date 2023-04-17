@@ -13,12 +13,16 @@ const darkTheme = {
   '--text-color-darkgray': colors['--gray-4'],
   '--text-color-code': colors['--orange-4'],
   '--text-color-anchor': colors['--red-4'],
+  '--text-color-h1': colors['--gray-0'],
 
   // Background colors
   '--background-color-code': colors['--gray-8'],
+  '--background-color-layout': colors['--gray-8'],
+  '--background-color-highlight': colors['--blue-2'],
 
   // Border colors
   '--border-color-midgray': colors['--gray-4'],
+  '--border-color-layout': colors['--gray-6'],
 
 };
 
