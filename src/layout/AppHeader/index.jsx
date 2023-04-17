@@ -4,12 +4,11 @@ import Select from '../../components/Select';
 import style from './index.module.css';
 
 import {
-  selectedTheme,
-  themeSelectOptions
-} from '../../store/theme';
+  theme
+} from '../../store';
 
 function handleSelect(e) {
-  selectedTheme.value = e.target.value;
+  theme.selectedTheme.value = e.target.value;
 }
 
 function AppHeader() {
@@ -20,8 +19,8 @@ function AppHeader() {
       <Select
         name="themes"
         label="Choose color mode"
-        value={selectedTheme.value}
-        options={themeSelectOptions.value}
+        value={theme.selectedTheme.value}
+        options={theme.themeSelectOptions.value}
         handleSelect={handleSelect}
       />
     </header>

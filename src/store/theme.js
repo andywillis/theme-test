@@ -30,7 +30,7 @@ const workingTheme = computed(() => {
   };
 });
 
-export {
+export default {
   selectedTheme,
   themeSelectOptions,
   workingTheme

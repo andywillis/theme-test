@@ -1,10 +1,10 @@
 import { effect } from '@preact/signals';
 
-import { workingTheme } from '../store/theme';
+import { theme } from '../store';
 
 function useTheme(selectedTheme) {
   effect(() => {
-    Object.entries(workingTheme.value).forEach(([ key, value ]) => {
+    Object.entries(theme.workingTheme.value).forEach(([ key, value ]) => {
       document.documentElement.style.setProperty(key, value);
     });
   }, [selectedTheme]);
