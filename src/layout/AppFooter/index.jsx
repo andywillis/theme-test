@@ -1,10 +1,9 @@
 import style from './index.module.css';
 
-function AppFooter({ children }) {
-
+function AppFooter() {
   return (
-    <footer class={style.footer}>
-      {children}
+    <footer className={style.footer}>
+      &copy; Andy Willis {new Date().getFullYear()}
     </footer>
   );
 }
