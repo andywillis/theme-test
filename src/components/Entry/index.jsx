@@ -8,8 +8,6 @@ function Entry({ data: entry }) {
 
   const { title, date, body, tags } = entry;
 
-  console.log(entry);
-
   return (
     <section class={style.entry}>
 
