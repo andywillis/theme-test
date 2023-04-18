@@ -3,7 +3,9 @@ import preact from '@preact/preset-vite';
 import postcssNesting from 'postcss-nesting';
 
 export default defineConfig({
-  plugins: [preact()],
+  plugins: [
+    preact()
+  ],
   server: {
     open: true,
     port: 3000

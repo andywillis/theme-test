@@ -1,8 +1,10 @@
 {
   "plugins": [
-    "@babel/plugin-syntax-import-assertions"
+    "@babel/plugin-syntax-import-assertions",
+    ["transform-react-jsx", { "pragma": "h" }]
   ],
   "presets": [
+    "@babel/preset-env",
     "@babel/preset-react"
   ]
 }
