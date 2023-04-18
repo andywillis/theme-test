@@ -3,6 +3,7 @@ import preact from '@preact/preset-vite';
 import postcssNesting from 'postcss-nesting';
 
 export default defineConfig({
+  root: 'src2',
   plugins: [
     preact()
   ],
@@ -10,7 +11,6 @@ export default defineConfig({
     open: true,
     port: 3000
   },
-  root: 'src',
   resolve: {
     alias: {
       react: 'preact/compat'

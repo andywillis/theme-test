@@ -1,0 +1,15 @@
+.entry {
+  margin: var(--container-margin) 0;
+}
+
+.entry p {
+  margin: calc(var(--box-margin) * 2) 0;
+}
+
+.entry p a {
+  color: var(--text-color-anchor);
+}
+
+.header {
+  margin-bottom: calc(var(--text-margin) * 2);
+}

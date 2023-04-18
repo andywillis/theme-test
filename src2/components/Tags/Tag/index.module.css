@@ -1,0 +1,6 @@
+.tag {
+  background-color: var(--background-color-tag);
+  border: 1px solid #bcbcbc;
+  padding: 0.3rem 0.75rem 0.3rem 0.75rem;
+  margin: 0 0.5rem 0 0;
+}

@@ -7,6 +7,9 @@ dependencies:
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
+  htm:
+    specifier: 3.1.1
+    version: 3.1.1
   open-props:
     specifier: ^1.5.3
     version: 1.5.3
@@ -1902,6 +1905,10 @@ packages:
     dependencies:
       function-bind: 1.1.1
     dev: true
+
+  /htm@3.1.1:
+    resolution: {integrity: sha512-983Vyg8NwUE7JkZ6NmOqpCZ+sh1bKv2iYTlUkzlWmA5JD2acKoxd4KVxbMmxX/85mtfdnDmTFoNKcg5DGAvxNQ==}
+    dev: false
 
   /ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
