@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "htm": "vite -c vite.config-htm.js",
     "build": "vite build",
-    "preview": "vite preview",
-    "static": "rollup -c"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@preact/signals": "1.1.3",
