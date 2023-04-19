@@ -1,0 +1,9 @@
+.footer {
+  top: 100vh;
+  position: sticky;
+  background-color: var(--background-color-layout);
+  border-top: 1px solid var(--border-color-layout);
+  text-align: right;
+  margin-top: 1em;
+  padding: 0.5em;
+}
