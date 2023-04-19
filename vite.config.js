@@ -3,7 +3,7 @@ import preact from '@preact/preset-vite';
 import postcssNesting from 'postcss-nesting';
 
 export default defineConfig({
-  root: 'src2',
+  root: 'src',
   plugins: [
     preact()
   ],
