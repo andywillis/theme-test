@@ -1,11 +1,13 @@
 import { defineConfig } from 'vite';
 import preact from '@preact/preset-vite';
 import postcssNesting from 'postcss-nesting';
+import viteCompression from 'vite-plugin-compression';
 
 export default defineConfig({
   root: 'src',
   plugins: [
-    preact()
+    preact(),
+    viteCompression()
   ],
   server: {
     open: true,
@@ -27,6 +29,6 @@ export default defineConfig({
     target: 'esnext',
     emptyOutDir: true,
     outDir: '../build',
-    sourcemap: true
+    sourcemap: false
   }
 });
